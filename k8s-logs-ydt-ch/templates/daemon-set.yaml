@@ -47,8 +47,6 @@ spec:
           readOnly: true
         - name: fluent-bit-config
           mountPath: /fluent-bit/etc/
-#        - name: aws-credentials-volume
-#          mountPath:  /root/.aws
       terminationGracePeriodSeconds: 10
       volumes:
       - name: varlog
@@ -60,9 +58,6 @@ spec:
       - name: fluent-bit-config
         configMap:
           name: fluent-bit-config
-#      - name: aws-credentials-volume
-#        secret:
-#          secretName: aws-credentials
       serviceAccountName: fluent-bit
       tolerations:
       - key: node-role.kubernetes.io/master
