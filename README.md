@@ -1,4 +1,4 @@
-# Log shipping from Managed Kubernetes to ClickHouse
+# Log data shipping from Managed Kubernetes to Yandex Objct Storage (S3) и ClickHouse
 ## Создайте поток данных Yandex Data Streams
 Выполнить [инструкцию по установке](https://cloud.yandex.ru/docs/data-streams/quickstart/create-stream)
 Сохраните имя потока (--stream-name) для использования в значении переменной  ydsStream файла values.yaml
